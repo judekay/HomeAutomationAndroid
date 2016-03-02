@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context="com.example.judekayode.homeautomation.DeviceGroupActivity"
+    android:baselineAligned="false">
+
+
+    <!--<android.support.design.widget.AppBarLayout android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="@color/black"
+            android:id="@+id/groupnametextView" />
+
+        <TextView
+
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="@color/black"
+            android:layout_alignRight="@+id/groupnametextView"
+            android:layout_alignParentRight="true"
+            android:id="@+id/reloadtextView" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/list"
+        android:divider="@color/green"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/green"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:src="@drawable/house"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="New Text"
+            android:id="@+id/groupnametextView1" />
+
+        <TextView
+
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textColor="@color/black"
+            android:layout_alignRight="@+id/groupnametextView1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/reloadtextView1" />
+    </RelativeLayout>
+
+</LinearLayout>

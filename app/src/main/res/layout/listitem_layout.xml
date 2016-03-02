@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:minHeight="50dp"
+android:orientation="horizontal"
+android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/roomimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sittingroom"
+        />
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/roomimage"
+    android:text="@string/roomname"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/roomnametextView"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:typeface="sans" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@id/roomnametextView"
+    android:layout_toRightOf="@+id/roomimage"
+    android:text="@string/roomdevicenumbers"
+    android:id="@+id/roomdevicenumbertextView"
+    android:textColor="@color/black"
+    android:textSize="12sp" />
+
+<TextView
+    android:layout_width="@dimen/prevwidthsize"
+    android:layout_height="@dimen/prevheitsize"
+    android:layout_alignBaseline="@+id/roomnametextView"
+    android:layout_alignBottom="@+id/roomnametextView"
+    android:text="@string/prevtext"
+    android:gravity="center"
+    android:layout_marginRight="20dp"
+    android:layout_alignParentRight="true"
+    android:background="@color/iron"
+    android:layout_gravity="center"
+    android:id="@+id/prevtextView"
+    android:textColor="@drawable/list_item_text_selector"
+    android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/devicegroupid"
+        android:layout_width="wrap_content"
+        android:text="ADE"
+        android:layout_toRightOf="@+id/roomnametextView"
+        android:textColor="@color/colorAccent"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
